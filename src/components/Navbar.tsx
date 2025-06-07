@@ -15,36 +15,36 @@ import {
 
 import NavItem from "./NavItem";
 
+const items = [
+  { to: "/", label: "Home", icon: HiOutlineHome, activeIcon: HiMiniHome },
+  {
+    to: "/prime",
+    label: "Prime",
+    icon: HiOutlineCheckCircle,
+    activeIcon: HiMiniCheckCircle,
+  },
+  {
+    to: "/subscriptions",
+    label: "Subscriptions",
+    icon: HiOutlineSquaresPlus,
+    activeIcon: HiMiniSquaresPlus,
+  },
+  {
+    to: "/downloads",
+    label: "Downloads",
+    icon: HiOutlineArrowDownTray,
+    activeIcon: HiArrowDownTray,
+  },
+  {
+    to: "/search",
+    label: "Search",
+    icon: HiOutlineMagnifyingGlass,
+    activeIcon: HiMagnifyingGlass,
+  },
+];
+
 export default function Navbar() {
   const { pathname } = useLocation();
-
-  const items = [
-    { to: "/", label: "Home", icon: HiOutlineHome, activeIcon: HiMiniHome },
-    {
-      to: "/prime",
-      label: "Prime",
-      icon: HiOutlineCheckCircle,
-      activeIcon: HiMiniCheckCircle,
-    },
-    {
-      to: "/subscriptions",
-      label: "Subscriptions",
-      icon: HiOutlineSquaresPlus,
-      activeIcon: HiMiniSquaresPlus,
-    },
-    {
-      to: "/downloads",
-      label: "Downloads",
-      icon: HiOutlineArrowDownTray,
-      activeIcon: HiArrowDownTray,
-    },
-    {
-      to: "/search",
-      label: "Search",
-      icon: HiOutlineMagnifyingGlass,
-      activeIcon: HiMagnifyingGlass,
-    },
-  ];
 
   return (
     <nav className="flex h-16 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-950">
